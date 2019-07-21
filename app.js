@@ -6,28 +6,28 @@
 
 const themes = {
   white: {
-    '--box-bg': 'white',
-    '--box-text-color': 'black',
+    "--box-bg": "white",
+    "--box-text-color": "black"
   },
   black: {
-    '--box-bg': 'black',
-    '--box-text-color': 'white',
-  },
+    "--box-bg": "black",
+    "--box-text-color": "white"
+  }
 };
 
-const themeSelect = document.getElementById('themes');
-const form = document.forms['customThemeFrom'];
-const colorInputs = document.querySelectorAll('[data-var]');
-const inputThemeName = form.elements['themeName'];
+const themeSelect = document.getElementById("themes");
+const form = document.forms["customThemeFrom"];
+const colorInputs = document.querySelectorAll("[data-var]");
+const inputThemeName = form.elements["themeName"];
 
-themeSelect.addEventListener('change', e => {
+themeSelect.addEventListener("change", e => {
   const themeVariables = themes[themeSelect.value];
   Object.entries(themeVariables).forEach(([key, value]) => {
     document.body.style.setProperty(key, value);
   });
 });
 
-form.addEventListener('submit', e => {
+form.addEventListener("submit", e => {
   e.preventDefault();
   const newTheme = {};
   const newThemeName = inputThemeName.value;
