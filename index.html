@@ -2,68 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>HomeWork6</title>
     <style>
-      :root {
-        --box-bg: black;
-        --box-text-color: white;
-      }
       .box {
-        padding: 10px;
-        background: var(--box-bg);
-        height: 100px;
-      }
-      .box p {
-        color: var(--box-text-color);
+        padding: 10px !important;
+        min-height: 100px !important;
       }
       body {
-        padding: 10px;
-        /* background: var(--main-bg); */
+        padding: 10px !important;
       }
     </style>
   </head>
   <body>
-    <!-- <input type="color" name="color" id="color" /> -->
-    <select name="themes" id="themes">
-      <option value="black">black</option>
-      <option value="white">white</option>
-    </select>
     <div class="box">
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        ad minus! Fuga cupiditate cum, accusantium error ducimus eum natus
-        aliquam sequi quae placeat soluta explicabo itaque similique dolorum!
-        Earum, a?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+        cumque facilis, quasi atque libero minus soluta qui adipisci, voluptatem
+        saepe, quo consectetur dolorem suscipit commodi ipsam ad aut laudantium
+        vero?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+        enim velit porro ipsam doloribus id fugit, quos eaque corrupti magnam
+        debitis quod quam. Ex dolores animi excepturi nam neque inventore!Vero
+        impedit iste unde eligendi alias. Cupiditate perferendis tenetur
+        aperiam. Blanditiis est maiores quia laboriosam eius, et accusantium
+        voluptate earum! Fuga dignissimos explicabo deleniti esse earum cum
+        unde, sed dolorem?
       </p>
-    </div>
-    <h2>Custom theme</h2>
-    <div class="custom-theme-controls">
-      <form name="customThemeFrom">
-        <div class="controls-item">
-          <input type="text" name="themeName" id="themeName" />
-        </div>
-        <div class="controls-item">
-          <label for="color--box-bg">--box-bg</label>
-          <input
-            type="color"
-            name="color"
-            id="color--box-bg"
-            data-var="--box-bg"
-          />
-        </div>
-        <div class="controls-item">
-          <label for="color--box-text-color">--box-text-color</label>
-          <input
-            type="color"
-            name="color"
-            id="color--box-text-color"
-            data-var="--box-text-color"
-          />
-        </div>
-        <button type="submit">Set custom theme</button>
-      </form>
     </div>
     <script src="app.js"></script>
   </body>
